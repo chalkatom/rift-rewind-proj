@@ -10,8 +10,40 @@ img.full-width {
     height: auto;         
   }
 
+.carousel {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    flex: 0 0 100%; 
+    height: auto;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 @font-face {
-    font-family: Asgard Trial Title;
+    font-family: 'Asgard Title';
     src: url('../assets/fonts/AsgardTrial-WideBoldItalic.woff2') format('woff2');
     font-weight: 700;
     font-style: italic;
@@ -39,7 +71,13 @@ img.full-width {
 }
 
 .title {
-    font-family: 'Asgard Trial Title';
+    font-family: 'Asgard Title';
+    font-weight: 700;
+    font-style: italic;
+}
+
+.center-text {
+    text-align: center;
 }
 
 body {
