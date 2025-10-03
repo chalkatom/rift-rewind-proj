@@ -194,7 +194,7 @@
         if (data.topChampions && data.topChampions.length > 0) {
             const championsHtml = data.topChampions.map(champ => `
                 <div class="champion-card">
-                    <p><strong>Champion ID:</strong> ${champ.championId}</p>
+                    <p><strong>Champion:</strong> ${champ.championName}</p>
                     <p><strong>Mastery Level:</strong> ${champ.championLevel}</p>
                     <p><strong>Mastery Points:</strong> ${champ.championPoints.toLocaleString()}</p>
                 </div>
