@@ -194,8 +194,8 @@
         if (data.topChamps && data.topChamps.length > 0) {
             const championsHtml = data.topChamps.map(champ => `
                 <div class="champion-card">
-                    <p><strong>Champion:</strong> ${champ.champion}</p>
-                    <p><strong>Title:</strong> ${champ.title}</p>
+                    <p><strong>Champion:</strong> ${champ.champion}.toUpperCase();</p>
+                    <p><strong>Title:</strong> ${champ.title}.toUpperCase();</p>
                     <p><strong>Games Played:</strong> ${champ.games_played}</p>
                     <p><strong>Win Rate</strong> ${champ.win_rate}%</p>
                 </div>
