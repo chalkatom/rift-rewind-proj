@@ -191,12 +191,12 @@
         `;
         
         // Display top champions
-        if (data.topChampions && data.topChampions.length > 0) {
-            const championsHtml = data.topChampions.map(champ => `
+        if (data.topChamps && data.topChamps.length > 0) {
+            const championsHtml = data.topChamps.map(champ => `
                 <div class="champion-card">
-                    <p><strong>Champion:</strong> ${champ.championName}</p>
-                    <p><strong>Mastery Level:</strong> ${champ.championLevel}</p>
-                    <p><strong>Mastery Points:</strong> ${champ.championPoints.toLocaleString()}</p>
+                    <p><strong>Champion:</strong> ${champ.champion}</p>
+                    <p><strong>Games Played:</strong> ${champ.games_played}</p>
+                    <p><strong>Win Rate</strong> ${champ.win_rate}%</p>
                 </div>
             `).join('');
             
@@ -207,7 +207,7 @@
                 </div>
             `;
         } else {
-            championMastery.innerHTML = '<p>No champion mastery data found.</p>';
+            championMastery.innerHTML = '<p>No champion data found.</p>';
         }
         
         resultsDiv.style.display = 'block';
