@@ -15,20 +15,17 @@ img.full-width {
     width: 100%;
     display: flex;
     overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .carousel::-webkit-scrollbar {
     display: none;
 }
 
-.group{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .card {
-    flex: 0 0 100%; 
+    position: relative;
+    flex: 0 0 75%; 
     height: auto;
     padding: 0;
     border-radius: 0;
@@ -40,6 +37,27 @@ img.full-width {
     height: auto;
     display: block;
     object-fit: cover;
+}
+
+.card-NameText {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+.card-TagText {
+    position: absolute;
+    bottom: 10px;
+    left: 80px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    pointer-events: none;
+    white-space: nowrap;
 }
 
 @font-face {
@@ -80,7 +98,7 @@ img.full-width {
     text-align: center;
 }
 
-body {
+html, body {
     font-family: 'Asgard Trial', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -90,6 +108,14 @@ body {
     min-height: 100vh;
     position: relative;
     overflow-x: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body::before {
