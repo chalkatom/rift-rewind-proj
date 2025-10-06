@@ -62,7 +62,7 @@ img.full-width {
 
 @font-face {
     font-family: 'Asgard Title';
-    src: url('../assets/fonts/AsgardTrial-WideBoldItalic.woff2') format('woff2');
+    src: url('assets/fonts/AsgardTrial-WideBoldItalic.woff2') format('woff2');
     font-weight: 700;
     font-style: italic;
     font-display: swap;
@@ -70,7 +70,7 @@ img.full-width {
 
 @font-face {
     font-family: 'Asgard Trial';
-    src: url('../assets/fonts/AsgardTrial-WideLight.woff2') format('woff2');
+    src: url('assets/fonts/AsgardTrial-WideLight.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
     font-display: swap;
